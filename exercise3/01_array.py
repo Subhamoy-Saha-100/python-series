@@ -25,4 +25,3 @@ index = str.find("rr")
 replaced = str.replace("r", "l")
 
 # print(replaced) Output: hally
-
