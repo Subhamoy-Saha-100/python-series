@@ -1,0 +1,8 @@
+import time
+f = open("this.txt", "w")
+
+f.write("Karna can be with righteousness")
+f.write("\n\n\n")
+f.write('''Karna is one of the most complex and tragic characters in the Mahabharata. He was known for his bravery, generosity, loyalty, and strong sense of honour. However, his life also shows that righteousness is not always a simple choice between good and evil.\n\nKarna often stood by Duryodhana because Duryodhana gave him respect and friendship when society rejected him. His loyalty towards Duryodhana was one of his greatest strengths, but it also became one of his greatest weaknesses. Although Karna knew that some of Duryodhana’s actions were wrong, he continued to support him because he felt bound by gratitude and friendship.\n\nAt the same time, Karna showed many qualities associated with righteousness. He was extremely generous, kept his promises, respected his mother, and remained courageous even when he knew that his fate was against him. His decision to keep his promise to Kunti, while still choosing to fight for Duryodhana, reflects the conflict between personal duty and moral righteousness.\n\nKarna’s story teaches us that righteousness is not always black and white. A person can possess noble qualities while making choices that have harmful consequences. True righteousness requires not only loyalty and honour but also the courage to stand against injustice, even when doing so is personally difficult.\n\nTherefore, Karna can be seen as a tragic example of a person who possessed righteousness within himself but struggled to follow it completely. His life reminds us that doing what is right sometimes requires us to question even our strongest loyalties.''')
+
+f.close()
