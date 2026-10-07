@@ -3,13 +3,22 @@ import speech_recognition as sr
 import pyttsx3
 import webbrowser
 recognizer = sr.Recognizer()
+import musicLibrary
 
 
 def processCommand(c):
-    search = c.lower()
-
-    webbrowser.open(f"https://{search}.com")
-
+    search = c.lower().split(" ")[1]
+    start_word = c.lower().split(" ")[0]
+    if start_word == "open":
+        webbrowser.open(f"https://{search}.com")
+    elif c.lower().startswith("play"): 
+        print(f"Searching for {search} in music library...")
+        if search in musicLibrary.music:
+            link = musicLibrary.music[search]
+            webbrowser.open(link)
+        else:
+            speak(f"Sorry, I don't have {search} in my music library.")
+        
 def speak(text):
     engine = pyttsx3.init("sapi5")
     engine.say(text)
